@@ -1,9 +1,15 @@
-let h1saludo= document.querySelector("#saludo")
-let h2edad= document.querySelector("#edad")
-let nombre = prompt("Ingrese su nombre y apellido")
-let edad =  prompt("Ingrese su edad")
-let suma = (Number(edad)+ Number(10))
-h1saludo.innerHTML = `Hola ${nombre}`
-h2edad.innerHTML = `Tendrás ${suma} en diez años`
+let h1resultado= document.querySelector("#Resultado")
 
+let numero= Number (prompt("Escriba un número entero"))
 
+if(numero % 3 === 0){
+    Resultado.innerHTML= "Fizz"
+}else{
+    if(numero % 5 === 0){
+        Resultado.innerHTML= "Buzz"
+    }else{
+        if(numero % 3 === 0 && numero % 5 === 0){
+            Resultado.innerHTML= "FizzBuzz"
+        }
+    }
+}
